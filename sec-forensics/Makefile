@@ -21,8 +21,9 @@ COMMENT=	Meta port for forensics tools
 # - INDEX.DAT parser (Pasco / Pasco2 / libmsiecf / IEHist)
 # - Recycle bin parser, XP and 7 style (Rifiuti / Rifiuti2 / dumpster_dive)
 # - COM/OLE Structured Storage parser/browser (PIL / OleFileIO_PL / libolecf)
-# - Thumbcache.db parser
+# - Thumbcache.db parser (libwtcdb)
 # - Jumplist parser
+# - EVT/EVTX parser (libevt / libevtx)
 RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		clamav:${PORTSDIR}/security/clamav \
 		dc3dd:${PORTSDIR}/sysutils/dc3dd \
