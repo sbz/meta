@@ -16,9 +16,10 @@ COMMENT=	Meta port for forensics tools
 
 # XXX sysutils/autopsy not listed: IS_INTERACTIVE
 # To port:
+# - Prefetch parser (prefetch-tool / parse_prefetch_info)
 # - INDEX.DAT parser (Pasco / Pasco2 / libmsiecf / IEHist)
 # - Recycle bin parser (Rifiuti / Rifiuti2)
-# - COM Structured Storage / OLE Structured Storage parser (PIL or OleFileIO_PL?)
+# - COM Structured Storage / OLE Structured Storage parser or browser (PIL / OleFileIO_PL)
 # - Thumbcache parser
 # - Jumplist parser
 RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
