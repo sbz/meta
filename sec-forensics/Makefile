@@ -15,17 +15,25 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Meta port for forensics tools
 
 # XXX sysutils/autopsy not listed: IS_INTERACTIVE
-# XXX security/regripper* & security/py-volatility not commited yet
 RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		clamav:${PORTSDIR}/security/clamav \
 		dc3dd:${PORTSDIR}/sysutils/dc3dd \
 		dcfldd:${PORTSDIR}/sysutils/dcfldd \
 		dd_rescue:${PORTSDIR}/sysutils/dd_rescue \
+		ddrescue:${PORTSDIR}/sysutils/ddrescue \
 		foremost:${PORTSDIR}/sysutils/foremost \
+		hachoir-metadata:${PORTSDIR}/sysutils/hachoir-metadata \
+		hachoir-subfile:${PORTSDIR}/sysutils/hachoir-subfile \
+		hachoir-urwid:${PORTSDIR}/sysutils/hachoir-urwid \
+		hachoir-wx:${PORTSDIR}/sysutils/hachoir-wx \
 		log2timeline:${PORTSDIR}/security/log2timeline \
+		magicrescue:${PORTSDIR}/sysutils/magicrescue \
 		md5deep:${PORTSDIR}/security/md5deep \
 		memdump:${PORTSDIR}/sysutils/memdump \
 		p5-Image-ExifTool:${PORTSDIR}/graphics/p5-Image-ExifTool \
+		${PYTHON_PKGNAMEPREFIX}volatility:${PORTSDIR}/security/py-volatility \
+		regripper:${PORTSDIR}/security/regripper \
+		regripperplugins:${PORTSDIR}/security/regripperplugins \
 		scalpel:${PORTSDIR}/sysutils/scalpel \
 		sleuthkit:${PORTSDIR}/sysutils/sleuthkit \
 		ssdeep:${PORTSDIR}/security/ssdeep \
