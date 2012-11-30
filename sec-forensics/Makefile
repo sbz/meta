@@ -15,12 +15,13 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Meta port for forensics tools
 
 # XXX sysutils/autopsy not listed: IS_INTERACTIVE
-# To port:
-# - Prefetch parser (prefetch-tool / parse_prefetch_info)
+# To port (validate, port good ones):
+# - PF parser (prefetch-tool / parse_prefetch_info)
+# - LNK parser (Jafat lnkparse / liblnk)
 # - INDEX.DAT parser (Pasco / Pasco2 / libmsiecf / IEHist)
-# - Recycle bin parser (Rifiuti / Rifiuti2)
-# - COM Structured Storage / OLE Structured Storage parser or browser (PIL / OleFileIO_PL)
-# - Thumbcache parser
+# - Recycle bin parser, XP and 7 style (Rifiuti / Rifiuti2 / dumpster_dive)
+# - COM/OLE Structured Storage parser/browser (PIL / OleFileIO_PL / libolecf)
+# - Thumbcache.db parser
 # - Jumplist parser
 RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		clamav:${PORTSDIR}/security/clamav \
