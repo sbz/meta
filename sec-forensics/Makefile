@@ -34,6 +34,7 @@ RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		dcfldd:${PORTSDIR}/sysutils/dcfldd \
 		dd_rescue:${PORTSDIR}/sysutils/dd_rescue \
 		ddrescue:${PORTSDIR}/sysutils/ddrescue \
+		evtviewer:${PORTSDIR}/sysutils/evtviewer \
 		foremost:${PORTSDIR}/sysutils/foremost \
 		hachoir-metadata:${PORTSDIR}/sysutils/hachoir-metadata \
 		hachoir-subfile:${PORTSDIR}/sysutils/hachoir-subfile \
