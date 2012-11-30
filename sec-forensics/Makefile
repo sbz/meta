@@ -15,6 +15,12 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Meta port for forensics tools
 
 # XXX sysutils/autopsy not listed: IS_INTERACTIVE
+# To port:
+# - INDEX.DAT parser (Pasco / Pasco2 / libmsiecf / IEHist)
+# - Recycle bin parser (Rifiuti / Rifiuti2)
+# - COM Structured Storage / OLE Structured Storage parser (PIL or OleFileIO_PL?)
+# - Thumbcache parser
+# - Jumplist parser
 RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		clamav:${PORTSDIR}/security/clamav \
 		dc3dd:${PORTSDIR}/sysutils/dc3dd \
@@ -26,6 +32,8 @@ RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		hachoir-subfile:${PORTSDIR}/sysutils/hachoir-subfile \
 		hachoir-urwid:${PORTSDIR}/sysutils/hachoir-urwid \
 		hachoir-wx:${PORTSDIR}/sysutils/hachoir-wx \
+		libewf:${PORTSDIR}/devel/libewf \
+		libvshadow:${PORTSDIR}/devel/libvshadow \
 		log2timeline:${PORTSDIR}/security/log2timeline \
 		magicrescue:${PORTSDIR}/sysutils/magicrescue \
 		md5deep:${PORTSDIR}/security/md5deep \
@@ -36,6 +44,7 @@ RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		regripperplugins:${PORTSDIR}/security/regripperplugins \
 		scalpel:${PORTSDIR}/sysutils/scalpel \
 		sleuthkit:${PORTSDIR}/sysutils/sleuthkit \
+		sqliteman:${PORTSDIR}/databases/sqliteman \
 		ssdeep:${PORTSDIR}/security/ssdeep \
 		tcpick:${PORTSDIR}/net/tcpick \
 		tcpxtract:${PORTSDIR}/net/tcpxtract \
