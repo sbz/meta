@@ -9,7 +9,7 @@ MAINTAINER=	sbz
 COMMENT=	Executable and linkable format tools
 
 BUILD_DEPENDS=	${PORTSDIR}/devel/elf \
-		${PORTSDIR}/devel/elfckickers \
+		${PORTSDIR}/devel/elfkickers \
 		${PORTSDIR}/devel/dwarfdump \
 		${PORTSDIR}/devel/libelf \
 		${PORTSDIR}/devel/libdwarf \
