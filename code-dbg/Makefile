@@ -3,13 +3,15 @@
 #
 PORTNAME=	code-dbg
 PORTVERSION=	0
-CATEGORIES=	devel
+CATEGORIES=	devel sysutils
 
 MAINTAINER=	sbz
 COMMENT=	Code debugging tools
 
 BUILD_DEPENDS=	${PORTSDIR}/devel/gdb \
-		${PORTSDIR}/devel/valgrind
+		${PORTSDIR}/devel/valgrind \
+		${PORTSDIR}/devel/strace \
+		${PORTSDIR}/sysutils/ltrace
 
 RUN_DEPENDS=	${BUILD_DEPENDS}
 

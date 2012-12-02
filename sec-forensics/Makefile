@@ -1,34 +1,15 @@
-# New ports collection makefile for:	sec-forensics
-# Date created:				29 November 2012
-# Whom:					Antoine Brodin <antoine@FreeBSD.org>
 #
-# $FreeBSD$
+# sec-forensics
 #
-
 PORTNAME=	sec-forensics
 PORTVERSION=	0
 CATEGORIES=	security
-MASTER_SITES=	# empty
-DISTFILES=	# none
 
-MAINTAINER=	antoine@FreeBSD.org
-COMMENT=	Meta port for forensics tools
+MAINTAINER=	antoine
+COMMENT=	Forensics tools
 
-# XXX sysutils/autopsy not listed: IS_INTERACTIVE
-#
-# To port (validate, port good ones):
-# - PF parser (prefetch-tool / parse_prefetch_info)
-# - LNK parser (Jafat lnkparse / liblnk)
-# - INDEX.DAT parser (Pasco / Pasco2 / libmsiecf / IEHist)
-# - Recycle bin parser, XP style (Rifiuti2 / Jafat dumpster_dive)
-# - Recycle bin parser, Vista style (Rifiuti2)
-# - COM/OLE Structured Storage parser/browser (PIL / OleFileIO_PL / libolecf)
-# - Thumbcache.db parser (libwtcdb)
-# - Jumplist parser (build something based on libolecf + liblnk ?)
-# - EVT parser (libevt)
-# - EVTX parser (libevtx)
-
-RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
+RUN_DEPENDS=	autopsy:${PORTSDIR}/sysutils/autopsy \
+		bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		clamav:${PORTSDIR}/security/clamav \
 		dc3dd:${PORTSDIR}/sysutils/dc3dd \
 		dcfldd:${PORTSDIR}/sysutils/dcfldd \
@@ -60,9 +41,8 @@ RUN_DEPENDS=	bulk_extractor:${PORTSDIR}/sysutils/bulk_extractor \
 		vinetto:${PORTSDIR}/security/vinetto \
 		wireshark:${PORTSDIR}/net/wireshark
 
-NO_BUILD=	yes
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
-do-install:
-	${DO_NADA}
+MASTERDIR=	${.CURDIR}/../
 
-.include <bsd.port.mk>
+.include "${MASTERDIR}/meta.common.mk"

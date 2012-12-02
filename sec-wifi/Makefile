@@ -1,27 +1,20 @@
-# New ports collection makefile for:	sec-wifi
-# Date created:				29 November 2012
-# Whom:					Antoine Brodin <antoine@FreeBSD.org>
 #
-# $FreeBSD$
+# sec-wifi
 #
-
 PORTNAME=	sec-wifi
 PORTVERSION=	0
 CATEGORIES=	security net-mgmt
-MASTER_SITES=	# empty
-DISTFILES=	# none
 
-MAINTAINER=	antoine@FreeBSD.org
-COMMENT=	Meta port for Wifi security tools
+MAINTAINER=	antoine
+COMMENT=	Wifi security tools
 
 RUN_DEPENDS=	aircrack-ng:${PORTSDIR}/net-mgmt/aircrack-ng \
 		kismet:${PORTSDIR}/net-mgmt/kismet \
 		qkismet:${PORTSDIR}/net-mgmt/qkismet \
 		wireshark:${PORTSDIR}/net/wireshark
 
-NO_BUILD=	yes
+RUN_DEPENDS=    ${BUILD_DEPENDS}
 
-do-install:
-	${DO_NADA}
+MASTER_DIR=	${.CURDIR}/../
 
-.include <bsd.port.mk>
+.include "${MASTER_DIR}/meta.common.mk"

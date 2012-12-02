@@ -8,8 +8,12 @@ CATEGORIES=	devel sysutils
 MAINTAINER=	sbz
 COMMENT=	Executable and linkable format tools
 
-BUILD_DEPENDS=	${PORTSDIR}/devel/elf \
+BUILD_DEPENDS=	${PORTSDIR}/devel/chrpath \
+		${PORTSDIR}/devel/elf \
+		${PORTSDIR}/devel/elfio \
 		${PORTSDIR}/devel/elfkickers \
+		${PORTSDIR}/devel/elftoaout \
+		${PORTSDIR}/devel/elfsh \
 		${PORTSDIR}/devel/dwarfdump \
 		${PORTSDIR}/devel/libelf \
 		${PORTSDIR}/devel/libdwarf \

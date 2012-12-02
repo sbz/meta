@@ -7,16 +7,16 @@ COMMENT = Meta FreeBSD ports overlay
 SUBDIR += code-analysis
 SUBDIR += code-dbg
 SUBDIR += code-elf
-SUBDIR += forensics
-SUBDIR += fuzzing
-SUBDIR += os-fingerprinting
-SUBDIR += password-cracking
-SUBDIR += reverse-engineering
+SUBDIR += sec-cracking
 SUBDIR += sec-dev
+SUBDIR += sec-forensics
+SUBDIR += sec-fuzzing
+SUBDIR += sec-osfp
 SUBDIR += sec-net
+SUBDIR += sec-rce
 SUBDIR += sec-viz
 SUBDIR += sec-web
-SUBDIR += wireless
+SUBDIR += sec-wifi
 
 all:
 .for d in ${SUBDIR}
