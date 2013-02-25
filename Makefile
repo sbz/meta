@@ -7,6 +7,7 @@ COMMENT = Meta FreeBSD ports overlay
 SUBDIR += code-analysis
 SUBDIR += code-dbg
 SUBDIR += code-elf
+SUBDIR += code-google
 SUBDIR += sec-cracking
 SUBDIR += sec-dev
 SUBDIR += sec-forensics
