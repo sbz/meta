@@ -19,6 +19,7 @@ SUBDIR += sec-rce
 SUBDIR += sec-viz
 SUBDIR += sec-web
 SUBDIR += sec-wifi
+SUBDIR += sys-ssh
 
 all:
 .for d in ${SUBDIR}
