@@ -5,6 +5,7 @@
 COMMENT = Meta FreeBSD ports overlay
 
 SUBDIR += code-analysis
+SUBDIR += code-facebook
 SUBDIR += code-dbg
 SUBDIR += code-elf
 SUBDIR += code-go
